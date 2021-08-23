@@ -30,7 +30,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 $_SESSION['hoten'] = $row['hoten'];
                 $_SESSION['iddangnhap'] = $row['iddangnhap'];
                 // echo "đến đây rồi";
-                header("Location:http://localhost:8080/btl/admin/index.php");
+                header("Location:http://localhost:8080/btl/phenikaa/admin/index.php");
                 exit();
             }else{
                 header("Location: index-login.php?error=Incorect User name or password");

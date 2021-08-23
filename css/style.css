@@ -1,34 +1,36 @@
-
-.p-3.border.bg-light {
-    margin: 0 -5px;
-    text-align: center;
-    font-weight: bold;
+/* .p-3.border.bg-light {
+  margin: 0 -5px;
+  text-align: center;
+  font-weight: bold;
 }
 a.text-decoration-none {
-    color: #000;
+  color: #000;
 }
 a.text-decoration-none:hover {
-    color: orange;
+  color: orange;
 }
 
 .card-body {
-    position: absolute;
-    bottom: -25px;
+  position: absolute;
+  bottom: -25px;
 }
-.content>a.text-decoration-none {
-    color: white;
+.content > a.text-decoration-none {
+  color: white;
 }
-.card-body.position-absolute.top-50.start-0{
-    top: 55% !important;
+.card-body.position-absolute.top-50.start-0 {
+  top: 55% !important;
 }
 .card-body.position-absolute.top-50.start-0.text-dark {
-    top: 55% !important;
+  top: 55% !important;
 }
 a.btn.btn-primary {
-    background-color: #e94b00;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    height: 50px;
-    border-radius: 0;
+  background-color: #e94b00;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  border-radius: 0;
 }
+.why-phenika.position-absolute.top-0.end-50.text-white {
+    right: 38%!important;
+} */

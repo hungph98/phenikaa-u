@@ -11,14 +11,52 @@
 </head>
 
 <body>
+
+
+
+
     <div class="header">
         <!-- top-header -->
+        
 
         <!-- logo and menu -->
-        <div class="container">
+        <div class="container mt-3">
             <div class="row">
-                <img src="./image/logo_vn.png" class="img-thumbnail" alt="">
+                <div class="col-2">
+                    <img src="./image/logo_vn.png" style="width:100%">
+                </div>
+                <div class="col-10">
+                    <div class="container">
+                        <div class="row row-cols-12 mt-3" style="width:100%">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Giới thiệu</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Tin tức</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Đào tạo</a>
+                            </div>
+                            <div class="col-2">
+                                <a href="#" class="text-decoration-none">KH công nghệ</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Hợp tác </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Tuyển sinh</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">ĐBCL</a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">Tuyển dụng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
         <!-- Slide_Show -->
         <div class="slide_show">
@@ -83,10 +121,10 @@
 
     <!-- Secsion Tin tuyển sinh -->
     <section>
-        <h2>Tin tuyển sinh</h2>
-        <p>Danh sách thông tin tuyển sinh mới nhất của Trường Đại học Phenikaa</p>
+        <h2 class="mt-5 text-center">Tin tuyển sinh</h2>
+        <p class="mt-3 text-center">Danh sách thông tin tuyển sinh mới nhất của Trường Đại học Phenikaa</p>
         <div class="container overflow-hidden">
-            <div class="row gy-5">
+            <div class="row gy-5 mt-1">
                 <div class="col-6">
                     <div class="card">
                         <a href="#" class="text-decoration-none ">
@@ -195,13 +233,73 @@
     </section>
 
     <!-- Section Sự kiện  -->
+    <section class="bg-secondary">
+        <h2 class="mt-5 text-center">Sự kiện</h2>
+        <p class="mt-3 text-center">Các sự kiện đã, đang và sắp diễn ra tại Trường Đại học Phenikaa</p>
+        <!-- SlideShow -->
+        <div class="container overflow-hidden mt-4">
+            <div class="row gx-5">
+                <div class="col mt-5">
+                    <div class="d-grid gap-2 col-4 mx-auto mb-5">
+                        <a href="#" class="btn btn-primary" type="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tin tức và thông báo -->
     <section>
-        <h2>Sự kiện</h2>
-        <p>Các sự kiện đã, đang và sắp diễn ra tại Trường Đại học Phenikaa</p>
-        
+        <h2 class="mt-5 text-center">Tin tức và thông báo</h2>
+        <p class="mt-3 text-center">Tin tức mới nhất về các hoạt động của Trường Đại học Phenikaa</p>
+
+        <div class="container overflow-hidden">
+            <div class="row gy-5 mt-3">
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+        </div>
+        <div class="container overflow-hidden mt-4">
+            <div class="row gx-5">
+                <div class="col mt-5">
+                    <div class="d-grid gap-2 col-4 mx-auto">
+                        <a href="#" class="btn btn-primary" type="button">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+    <!-- Phenikaa qua những con số -->
+    <section>
+        <h2 class="mt-5 text-center">Phenika qua những con số</h2>
+        <div class="container px-4">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tại sao chọn Phenikaa -->
+    <section class="why-phenika mt-5 ">
+        <div class="position-relative">
+            <img src="./image/anh-nen-chon-phenikaa.png" style="width:100%">
+            <h2 class="position-absolute top-0 end-50 text-white ms-5"> Tại sao chọn Phenikaa</h2>
+        </div>
+    </section>
     <!-- Bootstrap JS -->
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
