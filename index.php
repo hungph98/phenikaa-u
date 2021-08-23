@@ -15,10 +15,61 @@
 
 
 
-    <div class="header">
+    <div class="header ">
         <!-- top-header -->
-        
-
+        <div class="bg-dark ">
+            <div class="container overflow-hidden ">
+                <div class="row gy-5">
+                    <div class="col-4">
+                        <div class="pt-1">
+                            <div class="container overflow-hidden">
+                                <div class="row gy-5">
+                                    <div class="col-2">
+                                        <a href="#" class="text-decoration-none text-white">Khoa</a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="text-decoration-none text-white">Viện</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="text-decoration-none text-white">Trung tâm</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="text-decoration-none text-white">Thư viện</a>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="pt-1">
+                            <div class="container overflow-hidden">
+                                <div class="row gy-5 d-flex justify-content-end">
+                                    <div class="col-3">
+                                        <a href="#" class="text-decoration-none text-white">Cán bộ giảng viên</a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="text-decoration-none text-white">Sinh viên</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-decoration-none text-white">Cựu sinh viên</a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="text-decoration-none text-white">Liên hệ</a>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="pt-1">
+                            <a href="./admin/index-login.php" class="text-decoration-none text-white">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- logo and menu -->
         <div class="container mt-3">
             <div class="row">
@@ -26,7 +77,7 @@
                     <img src="./image/logo_vn.png" style="width:100%">
                 </div>
                 <div class="col-10">
-                    <div class="container">
+                    <div class=" d-flex justify-content-end pb-3">
                         <div class="row row-cols-12 mt-3" style="width:100%">
                             <div class="col">
                                 <a href="#" class="text-decoration-none">Giới thiệu</a>
@@ -276,7 +327,7 @@
         </div>
     </section>
 
-+
+    +
     <!-- Phenikaa qua những con số -->
     <section>
         <h2 class="mt-5 text-center">Phenika qua những con số</h2>
