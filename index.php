@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phenika-University</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -276,7 +276,7 @@
         </div>
     </section>
 
-
++
     <!-- Phenikaa qua những con số -->
     <section>
         <h2 class="mt-5 text-center">Phenika qua những con số</h2>
@@ -301,7 +301,7 @@
         </div>
     </section>
     <!-- Bootstrap JS -->
-    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
