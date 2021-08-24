@@ -23,7 +23,6 @@ if (!isset($_SESSION['login'])) {
                         <tr>
                             <th scope="col">TT</th>
                             <th scope="col">Tên quyền</th>
-                            <th scope="col">Thêm</th>
                             <th scope="col">Sửa</th>
                             <th scope="col">Xóa</tsh>
                         </tr>
@@ -41,8 +40,7 @@ if (!isset($_SESSION['login'])) {
                                 <tr>
                                     <th scope="row"><?php echo $i; ?></th>
                                     <td> <?php echo $row['tenquyen']; ?></td>
-                                    <td><a href="update.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="change.php?myid<?php echo $row['id']; ?>"><i class="bi bi-pencil-fill"></i></a></td>
+                                    <td><a href="edit.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a href="delete.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-archive-fill"></i></a></td>
                                 </tr>
                         <?php

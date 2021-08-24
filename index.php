@@ -6,8 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phenika-University</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .img-khampha {
+            transition: all .6s ease;
+        }
+
+        .img-khampha:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +45,7 @@
                                     </div>
                                     <div class="col-4">
                                         <a href="#" class="text-decoration-none text-white">Thư viện</a>
-                                    </div>   
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +65,7 @@
                                     </div>
                                     <div class="col-2">
                                         <a href="#" class="text-decoration-none text-white">Liên hệ</a>
-                                    </div>   
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +187,7 @@
         <div class="container overflow-hidden">
             <div class="row gy-5 mt-1">
                 <div class="col-6">
-                    <div class="card">
+                    <div class="card img-khampha">
                         <a href="#" class="text-decoration-none ">
                             <img src="./image/img1.jpg" class="card-img-top ">
                             <div class="card-body position-absolute top-50 start-0 text-white">
@@ -192,9 +202,9 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card img-khampha">
                         <a href="#" class="text-decoration-none">
-                            <img src="./image/img2.jpg" class="card-img-top">
+                            <img src="./image/img2.jpg" class="card-img-top ">
                             <div class="card-body position-absolute top-50 start-0 p-3 bg-light text-dark" style="padding-bottom: 28px;bottom: 0px;">
                                 <p class="card-text">
                                     Trường Đại học Phenikaa nhận hồ sơ xét tuyển học bạ đợt 2 năm 2021
@@ -206,7 +216,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="height: 267px">
+                    <div class="card img-khampha" style="height: 267px">
                         <a href="#" class="text-decoration-none">
                             <img src="./image/img3.jpg" class="card-img-top">
                             <div class="card-body position-absolute top-50 start-0 p-3 bg-light text-dark" style="padding-bottom: 28px;bottom: 0px;">
@@ -227,7 +237,7 @@
         <div class="container overflow-hidden">
             <div class="row gy-5">
                 <div class="col-3">
-                    <div class="card" style="height: 259px">
+                    <div class="card img-khampha" style="height: 259px">
                         <a href="#" class="text-decoration-none">
                             <img src="./image/img4.jpg" class="card-img-top">
                             <div class="card-body position-absolute top-50 start-0 p-3 bg-light text-dark" style="padding-bottom: 28px;bottom: 0px;">
@@ -242,7 +252,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card" style="height: 259px">
+                    <div class="card img-khampha" style="height: 259px">
                         <a href="#" class="text-decoration-none">
                             <img src="./image/img5.jpg" class="card-img-top">
                             <div class="card-body position-absolute top-50 start-0 p-3 bg-light text-dark" style="padding-bottom: 28px;bottom: 0px;">
@@ -256,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card" style="height: 259px">
+                    <div class="card img-khampha" style="height: 259px">
                         <a href="#" class="text-decoration-none ">
                             <img src="./image/img6.jpg" class="card-img-top ">
                             <div class="card-body position-absolute top-50 start-0 text-white">
@@ -349,6 +359,82 @@
         <div class="position-relative">
             <img src="./image/anh-nen-chon-phenikaa.png" style="width:100%">
             <h2 class="position-absolute top-0 end-50 text-white ms-5"> Tại sao chọn Phenikaa</h2>
+        </div>
+    </section>
+
+    <!-- Khám phá trường địa học Phenikaa -->
+    <section>
+        <h2 class="text-center mt-5 mb-5">Khám phá Trường Đại học Phenikaa</h2>
+        <div class="mt-5">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-3 img-khampha">
+                        <img src="./image//kham-pha-phenikaa-02.jpg" style="width:100% ">
+                    </div>
+                    <div class="col-3 img-khampha">
+                        <img src="./image//kham-pha-phenikaa-03.jpg" style="width:100%">
+                    </div>
+                    <div class="col-6 img-khampha">
+                        <img src="./image//kham-pha-phenikaa-04.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="row g-2">
+                    <div class="col-9">
+                        <iframe width="830" height="554" src="https://www.youtube.com/embed/Qfc2lwNST54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="col img-khampha">
+                            <img src="./image//kham-pha-phenikaa-05.jpg" style="width:100%">
+                        </div>
+                        <div class="col mt-2 img-khampha">
+                            <img src="./image//kham-pha-phenikaa-06.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <!-- Footer-link -->
+        <div class="position-relative" style="background-color: #e6e6e6; height:200px">
+            <div class="container position-absolute top-50 " style="margin-left :7rem !important;">
+                <div class="row g-2">
+                    <div class="col-3">
+                        <h3>Kết nối với chúng tôi</h3>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="text-center fw-normal"><i class="bi bi-facebook pe-2" style="color: blue;"></i>FACEBOOK</h6>
+                        <a href="https://www.facebook.com/daihocphenikaa/" class="text-decoration-none d-flex justify-content-center fw-bold">facebook.com/daihocphenikaa</a>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="text-center fw-normal"><i class="bi bi-instagram pe-2"></i> INSTAGRAM</h6>
+                        <a href="https://www.instagram.com/phenikaa_uni/" class="text-decoration-none d-flex justify-content-center fw-bold">instagram.com/phenikaa_uni</a>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="text-center fw-normal"><i class="bi bi-youtube pe-2" style="color: red;"></i>YOUTUBE</h6>
+                        <a href="https://www.youtube.com/c/PhenikaaUniversity" class="text-decoration-none d-flex justify-content-center fw-bold">youtube.com/c/PhenikaaUniversity</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-main -->
+        <div class="position-relative" style="background-color: #002b54;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                            <img src="./image/logo_vn.png" alt="" style="width:100%">
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Bootstrap JS -->

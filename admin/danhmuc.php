@@ -22,10 +22,10 @@ if (!isset($_SESSION['login'])) {
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">TT</th>
+                            <th scope="col">Mã</th>
                             <th scope="col">Tên danh mục</th>
                             <th scope="col">Mô tả</th>
                             <th scope="col">Ngày đăng</th>
-                            <th scope="col">Thêm</th>
                             <th scope="col">Sửa</th>
                             <th scope="col">Xóa</tsh>
                         </tr>
@@ -42,12 +42,14 @@ if (!isset($_SESSION['login'])) {
                         ?>
                                 <tr>
                                     <th scope="row"><?php echo $i; ?></th>
+                                    <td> <?php echo $row['iddanhmuc']; ?></td>
                                     <td> <?php echo $row['tendanhmuc']; ?> </td>
                                     <td> <?php echo $row['mota']; ?></td>
                                     <td> <?php echo $row['ngaydang']; ?></td>
-                                    <td><a href="update.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="change.php?myid<?php echo $row['id']; ?>"><i class="bi bi-pencil-fill"></i></a></td>
-                                    <td><a href="delete.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-archive-fill"></i></a></td>
+                                    <td><a href="edit.php?id=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="delete.php?id=<?php echo $row['iddanhmuc']; ?>"
+                                    onclick="return confirm('Bạn có thực sự muốn xóa ?' );">
+                                    <i class="bi bi-archive-fill"></i></a></td>
                                 </tr>
                         <?php
                                 $i++;

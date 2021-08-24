@@ -25,7 +25,6 @@ if (!isset($_SESSION['login'])) {
                             <th scope="col">Tiêu đề</th>
                             <th scope="col">Nội dung</th>
                             <th scope="col">Ngày đăng</th>
-                            <th scope="col">Thêm</th>
                             <th scope="col">Sửa</th>
                             <th scope="col">Xóa</tsh>
                         </tr>
@@ -45,9 +44,10 @@ if (!isset($_SESSION['login'])) {
                                     <td> <?php echo $row['tieude']; ?> </td>
                                     <td> <?php echo $row['noidung']; ?></td>
                                     <td> <?php echo $row['ngayviet']; ?></td>
-                                    <td><a href="update.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="change.php?myid<?php echo $row['id']; ?>"><i class="bi bi-pencil-fill"></i></a></td>
-                                    <td><a href="delete.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-archive-fill"></i></a></td>
+                                    <td><a href="edit.php?myid<?php echo $row['id']; ?>"><i class="bi bi-pencil-fill"></i></a></td>
+                                    <td><a href="delete.php?id=<?php echo $row['idtintuc']; ?>"
+                                    onclick="return confirm('Bạn có thực sự muốn xóa ?' );">
+                                    <i class="bi bi-archive-fill"></i></a></td>
                                 </tr>
                         <?php
                                 $i++;
