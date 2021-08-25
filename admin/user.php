@@ -40,10 +40,6 @@ if (!isset($_SESSION['login'])) {
                     <div class="col-md-2">
                         <label for="validationCustom05" class="form-label">Ngày Lập</label>
                         <input type="text" class="form-control" name="ngaylap" placeholder="Ngày lập" required>
-                        <!-- <div class="form-outline datepicker">
-                            <input type="text" class="form-control" id="exampleDatepicker1" />
-                            <label for="exampleDatepicker1" class="form-label">Select a date</label>
-                        </div> -->
 
                     </div>
                     <div class="col-md-2">
@@ -52,6 +48,8 @@ if (!isset($_SESSION['login'])) {
                             <option selected disabled value="">Choose...</option>
                             <option>1</option>
                             <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
                         </select>
                     </div>
                     <div class="col-12">
@@ -74,7 +72,7 @@ if (!isset($_SESSION['login'])) {
                     // $result = mysqli_query($conn, $sql);
                     // $count = mysqli_num_rows($result);
                     if (mysqli_query($conn, $sql)) {
-                        header("Location:http://localhost:8080/btl/phenikaa/admin/user.php");
+                        // header("Location:http://localhost:8080/btl/phenikaa/admin/user.php");
                     }else{
                         echo "Không thể thêm người dùng mới";
                     }
@@ -83,7 +81,7 @@ if (!isset($_SESSION['login'])) {
                 ?>
             </div>
             <div class="row mt-5">
-                <table class="table table-bordered border-dark ">
+                <table class="table table-bordered border-dark table-striped table-hover ">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">TT</th>
@@ -113,7 +111,7 @@ if (!isset($_SESSION['login'])) {
                                     <td> <?php echo $row['diachi']; ?></td>
                                     <td> <?php echo $row['kichhoat'] ?></td>
                                     <td> <?php echo $row['ngaylap'] ?></td>
-                                    <td><a href="edit.php?id=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="editUser.php?id=<?php echo $row['iddangnhap']; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a href="delete.php?id=<?php echo $row['iddangnhap']; ?>" 
                                     onclick="return confirm('Bạn có thực sự muốn xóa ?' );">
                                     <i class="bi bi-archive-fill"></i></a></td>

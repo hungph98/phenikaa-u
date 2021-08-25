@@ -298,6 +298,43 @@
         <h2 class="mt-5 text-center">Sự kiện</h2>
         <p class="mt-3 text-center">Các sự kiện đã, đang và sắp diễn ra tại Trường Đại học Phenikaa</p>
         <!-- SlideShow -->
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-3">
+                    <div class="card img-khampha">
+                        <img src="./image/kh-ky-nang-thich-ung-thumbnail.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Kế hoạch tổ chức đào tạo "Kĩ năng thích ứng môi trường làm việc "</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card img-khampha">
+                        <img src="./image/ts-online-5-18.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Cuộc Tiktok Challenge: Phenikaar Anti Covid đồng hành cùng chiến dịch "Tuổi trẻ Phenikaa: Học online - Trổ tài chống dịch"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card img-khampha">
+                        <img src="./image/ts-online-5-thumbnail-19.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Tuổi trẻ Phenikaa: Học online - trổ tài chống dịch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card img-khampha">
+                        <img src="./image/khoa-dao-tao-online-thumbnail-04.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Khóa đào tạo "Kĩ năng chinh phục nhà tuyển dụng"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container overflow-hidden mt-4">
             <div class="row gx-5">
                 <div class="col mt-5">
@@ -317,12 +354,87 @@
         <div class="container overflow-hidden">
             <div class="row gy-5 mt-3">
                 <div class="col-6">
+                    <div class="container">
+                        <div class="row g-2 boder bg-light ">
+                            <div class="col-6 img-khampha">
+                                <img src="./image/thumbnail-nguong-diem-nhan-ho-so-03.jpg" style="width:100%">
+                            </div>
+                            <div class="col-6">
+                                <div class="p-1">
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-cong-bo-nguong-diem-nhan-ho-so-xet-tuyen-dai-hoc-he-chinh-quy-theo-phuong-thuc-xet-diem-thi-tot-nghiep-thpt-nam-2021" class="text-decoration-none text-black">
+                                        <p class="fw-700">Trường Đại học Phenikaa công bố ngưỡng điểm nhận hồ sơ xét tuyển Đại học hệ chính quy theo phương thức xét điểm thi tốt nghiệp THPT năm 2021</p>
+                                    </a>
+                                    <br>
+                                    <hr>
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-cong-bo-nguong-diem-nhan-ho-so-xet-tuyen-dai-hoc-he-chinh-quy-theo-phuong-thuc-xet-diem-thi-tot-nghiep-thpt-nam-2021"><button type="button" class="btn btn-outline-secondary">Xem thêm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6">
+                    <div class="container">
+                        <div class="row g-2 boder bg-light ">
+                            <div class="col-6 img-khampha">
+                                <img src="./image/tin-tuc.jpg" style="width:100%">
+                            </div>
+                            <div class="col-6">
+                                <div class="p-1">
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-cong-bo-ket-qua-xet-tuyen-dot-2-nam-2021-theo-phuong-thuc-xet-tuyen-ket-qua-hoc-tap-thpt-hoc-ba" class="text-decoration-none text-black">
+                                        <p class="fw-700">Trường Đại học Phenikaa công bố kết quả xét tuyển đợt 2 năm 2021 theo phương thức xét tuyển kết quả học tập THPT (học bạ)</p>
+                                        <br>
+                                    </a>
+                                    <br>
+                                    <hr>
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-cong-bo-ket-qua-xet-tuyen-dot-2-nam-2021-theo-phuong-thuc-xet-tuyen-ket-qua-hoc-tap-thpt-hoc-ba"><button type="button" class="btn btn-outline-secondary">Xem thêm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6">
+                    <div class="container">
+                        <div class="row g-2 boder bg-light ">
+                            <div class="col-6 img-khampha">
+                                <img src="./image/thumbnail-tin-tuc-01.jpg" style="width:100%">
+                            </div>
+                            <div class="col-6">
+                                <div class="p-1">
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/thong-bao-nhap-hoc-dot-2-nam-2021" class="text-decoration-none text-black">
+                                        <p class="fw-700">Thông báo nhập học đợt 2 năm 2021</p>
+                                        <br><br>
+                                        <br>
+                                    </a>
+                                    <br>
+                                    <hr>
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/thong-bao-nhap-hoc-dot-2-nam-2021"><button type="button" class="btn btn-outline-secondary">Xem thêm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6">
+                    <div class="container">
+                        <div class="row g-2 boder bg-light ">
+                            <div class="col-6 img-khampha">
+                                <img src="./image/anh-1.jpg" style="width:100%">
+                                <hr>
+                                <hr><hr>
+                                <hr>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-1">
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-ho-tro-hoc-phi-cho-sinh-vien-hoc-vien-do-anh-huong-cua-dich-covid-19" class="text-decoration-none text-black">
+                                        <p class="fw-700">Trường Đại học Phenikaa hỗ trợ học phí cho sinh viên, học viên do ảnh hưởng của dịch COVID-19</p>
+                                        <br>
+                                    </a>
+                                    <br>
+                                    <hr>
+                                    <a href="https://phenikaa-uni.edu.vn/vi/post/tin-tuc/truong-dai-hoc-phenikaa-ho-tro-hoc-phi-cho-sinh-vien-hoc-vien-do-anh-huong-cua-dich-covid-19"><button type="button" class="btn btn-outline-secondary">Xem thêm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -330,14 +442,14 @@
             <div class="row gx-5">
                 <div class="col mt-5">
                     <div class="d-grid gap-2 col-4 mx-auto">
-                        <a href="#" class="btn btn-primary" type="button">Xem thêm</a>
+                        <a href="https://phenikaa-uni.edu.vn/vi/category/tin-tuc" class="btn btn-primary" type="button">Xem thêm</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    +
+
     <!-- Phenikaa qua những con số -->
     <section>
         <h2 class="mt-5 text-center">Phenika qua những con số</h2>
@@ -357,8 +469,9 @@
     <!-- Tại sao chọn Phenikaa -->
     <section class="why-phenika mt-5 ">
         <div class="position-relative">
-            <img src="./image/anh-nen-chon-phenikaa.png" style="width:100%">
-            <h2 class="position-absolute top-0 end-50 text-white ms-5"> Tại sao chọn Phenikaa</h2>
+            <img src="./image/anh-nen-chon-phenikaa.png" style="width:100% ;height:600px">
+            <h2 class="position-absolute top-0 end-50 text-white ms-5" style="margin-top: 3rem !important;margin-right: -10rem !important;"> Tại sao chọn Phenikaa</h2>
+
         </div>
     </section>
 
@@ -427,13 +540,39 @@
         <div class="position-relative" style="background-color: #002b54;">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
-                            <img src="./image/logo_vn.png" alt="" style="width:100%">
+                    <div class="col-3 mt-5">
+                        <img src="./image/logo_vn.png" alt="" style="width:80%">
+                        <p class="text-white mt-3"><i class="bi bi-geo-alt-fill pe-2"></i>Yên Nghĩa - Hà Đông - Hà Nội</p>
+                        <p class="text-white "><i class="bi bi-telephone pe-2"></i>024.62918118 | Hotline: 094.651.1010</p>
+                        <a href="#" class="text-decoration-none text-white"><i class="bi bi-envelope pe-2"></i>Info@phenikaa-uni.edu.vn</a>
+                        <br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.7825328914105!2d105.74528411443474!3d20.96124659545663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452efff394ce3%3A0x391a39d4325be464!2zxJDhuqFpIGjhu41jIFBIRU5JS0FB!5e0!3m2!1svi!2s!4v1629796828767!5m2!1svi!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                    <div class="col">
-
+                    <div class="col-2 mt-5">
+                        <a href="#" class="text-decoration-none text-white">Ba công khai</a><br>
+                        <a href="#" class="text-decoration-none text-white">Tra cứu văn bằng</a><br>
+                        <a href="#" class="text-decoration-none text-white">Văn bản</a>
+                    </div>
+                    <div class="col-3 mt-5">
+                        <a href="#" class="text-decoration-none text-white">Bài báo ISI/SCOPUS</a><br>
+                        <a href="#" class="text-decoration-none text-white">Sáng chế / Giải pháp hữu ích</a><br>
+                        <a href="#" class="text-decoration-none text-white">Tạp chí khoa học</a><br>
+                        <a href="#" class="text-decoration-none text-white">Qũy Khoa học - Công nghệ </a>
+                    </div>
+                    <div class="col-2 mt-5">
+                        <a href="#" class="text-decoration-none text-white">Khoa - Trường</a><br>
+                        <a href="#" class="text-decoration-none text-white">Viện - Trung tâm</a><br>
+                        <a href="#" class="text-decoration-none text-white">Phòng - Ban</a>
+                    </div>
+                    <div class="col-2 mt-5">
+                        <a href="#" class="text-decoration-none text-white">Liên hệ</a><br>
+                        <a href="#" class="text-decoration-none text-white">Tuyển dụng</a><br>
+                        <a href="#" class="text-decoration-none text-white">Trải nghiệm</a><br>
+                        <a href="#" class="text-decoration-none text-white">Sơ đồ trang</a>
                     </div>
                 </div>
+                <hr style="color: grey;">
+                <p class="text-white text-center fst-italic"> Copyright © 2021 Trường Đại học PHENIKAA</p>
             </div>
         </div>
     </section>

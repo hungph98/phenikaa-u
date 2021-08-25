@@ -15,10 +15,39 @@ if (!isset($_SESSION['login'])) {
         <div class="container">
             <h2 class="mt-5 text-center ">Quản lí hình ảnh</h2>
             <div>
-                <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm hình ảnh</a>
+                <form class="row g-3 needs-validation" action="" method="POST">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Tên ảnh</label>
+                        <input type="text" class="form-control" name="tenanh" placeholder="Tên ảnh" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="validationCustom05" class="form-label">Ngày đăng</label>
+                        <input type="text" class="form-control" name="ngaydang" placeholder="Ngày đăng" required>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                    </div>
+                </form>
+                <?php
+                if (isset($_POST['luuthongtin'])) {
+                    $tenanh = $_POST['tenanh'];
+                    $ngaydang = $_POST['ngaydang'];
+
+                    $sql = "INSERT INTO thuvien (tenanh, ngaydang)
+                        VALUES ('$tendanhmuc' ,'$ngaydang')";
+                    // $result = mysqli_query($conn, $sql);
+                    // $count = mysqli_num_rows($result);
+                    if (mysqli_query($conn, $sql)) {
+                        header("Location:http://localhost:8080/btl/phenikaa/admin/thuvienanh.php");
+                    } else {
+                        echo "Không thể thêm ảnh mới";
+                    }
+                }
+
+                ?>
             </div>
             <div class="row mt-5">
-                <table class="table table-bordered border-dark ">
+                <table class="table table-bordered border-dark table-striped table-hover ">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">TT</th>
@@ -43,7 +72,9 @@ if (!isset($_SESSION['login'])) {
                                     <td> <?php echo $row['tenanh']; ?> </td>
                                     <td> <?php echo $row['ngaydang']; ?></td>
                                     <td><a href="edit.php?myid<?php echo $row['id']; ?>"><i class="bi bi-pencil-fill"></i></a></td>
-                                    <td><a href="delete.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-archive-fill"></i></a></td>
+                                    <td><a href="delete.php?id=<?php echo $row['idhinhanh']; ?>" 
+                                    onclick="return confirm('Bạn có thực sự muốn xóa ?' );">
+                                    <i class="bi bi-archive-fill"></i></a></td>
                                 </tr>
                         <?php
                                 $i++;

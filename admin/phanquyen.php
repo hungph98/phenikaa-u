@@ -14,11 +14,8 @@ if (!isset($_SESSION['login'])) {
     <div class="col-9 ">
         <div class="container">
             <h2 class="mt-5 text-center ">Quản lí quyền</h2>
-            <div>
-                <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm mới quyền</a>
-            </div>
             <div class="row mt-5">
-                <table class="table table-bordered border-dark ">
+                <table class="table table-bordered border-dark table-striped table-hover">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">TT</th>
@@ -41,7 +38,9 @@ if (!isset($_SESSION['login'])) {
                                     <th scope="row"><?php echo $i; ?></th>
                                     <td> <?php echo $row['tenquyen']; ?></td>
                                     <td><a href="edit.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a href="delete.php?myid=<?php echo $row['id']; ?>"><i class="bi bi-archive-fill"></i></a></td>
+                                    <td><a href="delete.php?id=<?php echo $row['idphanquyen']; ?>" 
+                                    onclick="return confirm('Bạn có thực sự muốn xóa ?' );">
+                                    <i class="bi bi-archive-fill"></i></a></td>
                                 </tr>
                         <?php
                                 $i++;

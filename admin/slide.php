@@ -14,9 +14,6 @@ if (!isset($_SESSION['login'])) {
     <div class="col-9 ">
         <div class="container">
             <h2 class="mt-5 text-center ">Quản lí trang trình chiếu</h2>
-            <div>
-                <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm mới trang</a>
-            </div>
             <div class="row mt-5">
                 <table class="table table-bordered border-dark ">
                     <thead class="thead-dark">

@@ -14,11 +14,12 @@ if (!isset($_SESSION['login'])) {
     <div class="col-9 ">
         <div class="container">
             <h2 class="mt-5 text-center ">Quản lí trang tin</h2>
-            <div>
+            
+            <!-- <div>
                 <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm trang tin</a>
-            </div>
+            </div> -->
             <div class="row mt-5">
-                <table class="table table-bordered border-dark ">
+                <table class="table table-bordered border-dark table-striped table-hover">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">TT</th>
@@ -56,6 +57,74 @@ if (!isset($_SESSION['login'])) {
                         ?>
                     </tbody>
                 </table>
+            </div>
+            <div>
+                <!-- <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm người dùng mới</a> -->
+                <form class="row g-3 needs-validation" action="" method="POST">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Tiêu đề</label>
+                        <input type="text" class="form-control" name="tieude" placeholder="Tiêu đề" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Nội dung</label>
+                        <input type="text" class="form-control" name="noidung" placeholder="Nội dung" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Ngày viết</label>
+                        <input type="text" class="form-control" name="ngayviet" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Danh mục</label>
+                        <input type="text" class="form-control" name="danhmuc" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Hình ảnh</label>
+                        <input type="text" class="form-control" name="hinhanh" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Người xét</label>
+                        <select class="form-select" name="dangnhap" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Tình trạng</label>
+                        <select class="form-select" name="tinhtrang" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Đã xét duyệt</option>
+                            <option>Chưa xét duyệt</option>
+                        </select>
+                    </div>
+
+                    </div>
+                    <div class="col-12" >
+                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                    </div>
+                </form>
+                <?php
+                if (isset($_POST['luuthongtin'])) {
+                    $tieude = $_POST['tiêude'];
+                    $noidung = $_POST['noidung'];
+                    $ngayviet = $_POST['ngayviet'];
+                    $danhmuc = $_POST['danhmuc'];
+                    $hinhanh = $_POST['hinhanh'];
+                    $dangnhap = $_POST['dangnhap'];
+                    $tinhtrang = $_POST['tinhtrang'];
+
+                    $sql = "INSERT INTO tintuc (tieude, noidung, ngayviet, iddanhmuc , idhinhanh,iddangnhap,idtinhtrang)
+                            VALUES ('$tieude','$noidung','$ngayviet',' $danhmuc','$hinhanh','$dangnhap','$tinhtrang')";
+                    // $result = mysqli_query($conn, $sql);
+                    // $count = mysqli_num_rows($result);
+                    if (mysqli_query($conn, $sql)) {
+                        header("Location:http://localhost:8080/btl/phenikaa/admin/tintuc.php");
+                    }else{
+                        echo "Không thể thêm tin tức mới";
+                    }
+                }
+
+                ?>
             </div>
         </div>
     </div>

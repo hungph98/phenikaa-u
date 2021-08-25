@@ -45,3 +45,35 @@
     }
 
 ?>
+<!-- Delate Hình ảnh -->
+
+<?php
+    include("./config/connect.php");
+    $id_thuvien = $_GET['id'];
+    $sql = "DELETE FROM thuvien WHERE idhinhanh = '$id_thuvien'";
+    $result = mysqli_query($conn,$sql);
+    if($result == true){
+        header("Location:http://localhost:8080/btl/phenikaa/admin/thuvienanh.php");
+        
+    }else{
+        echo "Xóa thất bại: " . mysqli_error($conn);
+        header('location:http://localhost:8080/btl/phenikaa/admin/thuvienanh.php');
+    }
+
+?>
+
+<!-- Delete phân quyền -->
+<?php
+    include("./config/connect.php");
+    $id_phanquyen = $_GET['id'];
+    $sql = "DELETE FROM phanquyen WHERE idphanquyen = '$id_phanquyen'";
+    $result = mysqli_query($conn,$sql);
+    if($result == true){
+        header("Location:http://localhost:8080/btl/phenikaa/admin/phanquyen.php");
+        
+    }else{
+        echo "Xóa thất bại: " . mysqli_error($conn);
+        header('location:http://localhost:8080/btl/phenikaa/admin/phanquyen.php');
+    }
+
+?>
