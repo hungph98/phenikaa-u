@@ -11,18 +11,13 @@ $result = mysqli_query($conn, $sql);
     <?php
     include("./component/header-edit.php")
     ?>
-    <h1 class="text-center mb-5" >Chỉnh sửa thông tin</h1>
-    <!-- <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm người dùng mới</a> -->
+    <h1 class="text-center mb-5">Chỉnh sửa thông tin</h1>
     <form class="row g-3 needs-validation" action="" method="POST">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label for="validationCustom01" class="form-label">Tên đăng nhập</label>
             <input type="text" class="form-control" name="tendangnhap" placeholder="Tên đăng nhập" required>
         </div>
-        <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Mật khẩu</label>
-            <input type="password" class="form-control" name="matkhau" placeholder="Mật khẩu" required>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label for="validationCustomUsername" class="form-label">Họ tên</label>
             <input type="text" class="form-control" name="hoten" placeholder="Họ tên" required>
         </div>
@@ -56,16 +51,14 @@ $result = mysqli_query($conn, $sql);
     <?php
     if (isset($_POST['save'])) {
         $tendangnhap = $_POST['tendangnhap'];
-        $matkhau = $_POST['matkhau'];
         $hoten = $_POST['hoten'];
         $diachi = $_POST['diachi'];
         $kichhoat = $_POST['kichhoat'];
         $ngaylap = $_POST['ngaylap'];
         $phanquyen = $_POST['phanquyen'];
-        $pass_hash  = password_hash($matkhau, PASSWORD_DEFAULT);
 
         $sql = "UPDATE dangnhap
-                SET tendangnhap = '$tendangnhap',matkhau = '$pass_hash',hoten = '$hoten',diachi = 'diachi', kichhoat = 'kichhoat',ngaylap = '$ngaylap',phanquyen = '$phanquyen'
+                SET tendangnhap = '$tendangnhap',hoten = '$hoten',diachi = '$diachi', kichhoat = '$kichhoat',ngaylap = '$ngaylap',phanquyen = '$phanquyen'
                 WHERE iddangnhap = '$id_thay_doi'";
         if ($conn->query($sql) === TRUE) {
             echo "thay dổi thành công";

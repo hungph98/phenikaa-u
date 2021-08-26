@@ -25,7 +25,7 @@ if (!isset($_SESSION['login'])) {
                         <input type="text" class="form-control" name="ngaydang" placeholder="Ngày đăng" required>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                        <button class="btn-primary mt-3" style="width: 90px;height: 35px;border: none;border-radius: 5px;" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
                     </div>
                 </form>
                 <?php

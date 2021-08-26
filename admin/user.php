@@ -15,7 +15,6 @@ if (!isset($_SESSION['login'])) {
         <div class="container">
             <h2 class="mt-5 mb-5 text-center ">Quản lí người dùng</h2>
             <div>
-                <!-- <a href="add-user.php" class="btn btn-primary mt-5 ">Thêm người dùng mới</a> -->
                 <form class="row g-3 needs-validation" action="" method="POST">
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">Tên đăng nhập</label>
@@ -53,7 +52,7 @@ if (!isset($_SESSION['login'])) {
                         </select>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                        <button class="btn-primary mt-3" style="width: 90px;height: 35px;border: none;border-radius: 5px;" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
                     </div>
                 </form>
                 <?php
@@ -69,10 +68,8 @@ if (!isset($_SESSION['login'])) {
 
                     $sql = "INSERT INTO dangnhap (tendangnhap, matkhau, hoten, diachi , kichhoat,ngaylap,idphanquyen)
                             VALUES ('$tendangnhap','$pass_hash','$hoten',' $diachi','$kichhoat','$ngaylap','$phanquyen')";
-                    // $result = mysqli_query($conn, $sql);
-                    // $count = mysqli_num_rows($result);
                     if (mysqli_query($conn, $sql)) {
-                        // header("Location:http://localhost:8080/btl/phenikaa/admin/user.php");
+                        header("Location:http://localhost:8080/btl/phenikaa/admin/user.php");
                     }else{
                         echo "Không thể thêm người dùng mới";
                     }
@@ -96,8 +93,6 @@ if (!isset($_SESSION['login'])) {
                     </thead>
                     <tbody>
                         <?php
-                        //Lặp lấy dữ liệu và hiển thị ra bảng
-                        //Bước 02: Thực hiện Truy vấn
                         $sql = "SELECT * FROM dangnhap";
                         $result = mysqli_query($conn, $sql);
                         if (mysqli_num_rows($result) > 0) {

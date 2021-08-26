@@ -22,7 +22,7 @@ if (!isset($_SESSION['login'])) {
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Mô tả</label>
-                        <input type="password" class="form-control" name="mota" placeholder="Mô tả" required>
+                        <input type="text" class="form-control" name="mota" placeholder="Mô tả" required>
                     </div>
                     <div class="col-md-2">
                         <label for="validationCustom05" class="form-label">Ngày đăng</label>
@@ -36,12 +36,12 @@ if (!isset($_SESSION['login'])) {
                         <label for="validationCustom05" class="form-label">Trạng thái</label>
                         <select class="form-select" name="trangthai" required>
                             <option selected disabled value="">Choose...</option>
-                            <option>Đã xét duyệt</option>
-                            <option>Chưa xét duyệt</option>
+                            <option>1</option>
+                            <option>2</option>
                         </select>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                        <button class="btn-primary mt-3" style="width: 90px;height: 35px;border: none;border-radius: 5px;" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
                     </div>
                 </form>
                 <?php
@@ -52,8 +52,8 @@ if (!isset($_SESSION['login'])) {
                     $dangnhap = $_POST['dangnhap'];
                     $trangthai = $_POST['trangthai'];
 
-                    $sql = "INSERT INTO danhmuc (tendanhmuc, mota, ngaydang, iddangnhap , idtrangthai)
-                        VALUES ('$tendanhmuc','$mota','$ngaydang',' $dangnhap','$trangthai')";
+                    $sql = "INSERT INTO danhmuc (tendanhmuc, mota,iddangnhap, ngaydang,  , idtinhtrang)
+                        VALUES ('$tendanhmuc','$mota','$dangnhap',' $ngaydang','$trangthai')";
                     // $result = mysqli_query($conn, $sql);
                     // $count = mysqli_num_rows($result);
                     if (mysqli_query($conn, $sql)) {

@@ -32,8 +32,6 @@ if (!isset($_SESSION['login'])) {
                     </thead>
                     <tbody>
                         <?php
-                        //Lặp lấy dữ liệu và hiển thị ra bảng
-                        //Bước 02: Thực hiện Truy vấn
                         $sql = "SELECT * FROM tintuc";
                         $result = mysqli_query($conn, $sql);
                         if (mysqli_num_rows($result) > 0) {
@@ -87,20 +85,22 @@ if (!isset($_SESSION['login'])) {
                             <option selected disabled value="">Choose...</option>
                             <option>1</option>
                             <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
                         </select>
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustomUsername" class="form-label">Tình trạng</label>
                         <select class="form-select" name="tinhtrang" required>
                             <option selected disabled value="">Choose...</option>
-                            <option>Đã xét duyệt</option>
-                            <option>Chưa xét duyệt</option>
+                            <option>1</option>
+                            <option>2</option>
                         </select>
                     </div>
 
                     </div>
                     <div class="col-12" >
-                        <button class="btn btn-primary mt-3" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
+                        <button class="btn-primary mt-3" style="width: 90px;height: 35px;border: none;border-radius: 5px;" type="submit" name="luuthongtin" value="luuthongtin">Thêm</button>
                     </div>
                 </form>
                 <?php
