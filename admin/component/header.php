@@ -52,11 +52,11 @@ if (!isset($_SESSION['login'])) {
                 <a href="./thuvienanh.php" class="text-decoration-none text-white">Thư viện hình ảnh</a>
               </button>
             </li>
-            <li class="list-group-item">
+            <!-- <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
                 <a href="./slide.php" class="text-decoration-none text-white">Trình chiếu</a>
               </button>
-            </li>
+            </li> -->
             <li class="list-group-item">
               <button type="button" class="btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
                 <a href="./phanquyen.php" class="text-decoration-none text-white">Phân quyền</a>

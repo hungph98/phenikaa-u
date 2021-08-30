@@ -80,7 +80,7 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-2">
-                    <img src="./image/logo_vn.png" style="width:100%">
+                    <a href="./index.php"><img src="./image/logo_vn.png" style="width:100%"></a>
                 </div>
                 <div class="col-10">
                     <div class=" d-flex justify-content-end pb-3">
