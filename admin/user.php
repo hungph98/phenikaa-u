@@ -69,7 +69,7 @@ if (!isset($_SESSION['login'])) {
                     $sql = "INSERT INTO dangnhap (tendangnhap, matkhau, hoten, diachi , kichhoat,ngaylap,idphanquyen)
                             VALUES ('$tendangnhap','$pass_hash','$hoten',' $diachi','$kichhoat','$ngaylap','$phanquyen')";
                     if (mysqli_query($conn, $sql)) {
-                        header("Location:http://localhost:8080/btl/phenikaa/admin/user.php");
+                        header("Location:http://localhost:81/php/phenikaa-u/admin/user.php");
                     }else{
                         echo "Không thể thêm người dùng mới";
                     }

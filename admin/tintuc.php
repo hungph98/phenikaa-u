@@ -118,7 +118,7 @@ if (!isset($_SESSION['login'])) {
                     // $result = mysqli_query($conn, $sql);
                     // $count = mysqli_num_rows($result);
                     if (mysqli_query($conn, $sql)) {
-                        header("Location:http://localhost:8080/btl/phenikaa/admin/tintuc.php");
+                        header("Location:http://localhost:81/php/phenikaa-u/admin/tintuc.php");
                     }else{
                         echo "Không thể thêm tin tức mới";
                     }

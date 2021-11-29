@@ -3,5 +3,5 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location:http://localhost:8080/btl/phenikaa/admin/index-login.php");
+header("Location:http://localhost:81/php/phenikaa-u/admin/index-login.php");
 ?>

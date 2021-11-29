@@ -22,42 +22,42 @@
           <ul class="list-group list-group-flush text-center">
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/index.php" class="text-decoration-none text-white">Trang chủ</a>
+                <a href="http://localhost:81/btl/phenikaa-u/admin/index.php" class="text-decoration-none text-white">Trang chủ</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/user.php" class="text-decoration-none text-white">Người dùng</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/user.php" class="text-decoration-none text-white">Người dùng</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/danhmuc.php" class="text-decoration-none text-white">Danh mục</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/danhmuc.php" class="text-decoration-none text-white">Danh mục</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/tintuc.php" class="text-decoration-none text-white">Tin tức</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/tintuc.php" class="text-decoration-none text-white">Tin tức</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/thuvienanh.php" class="text-decoration-none text-white">Thư viện hình ảnh</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/thuvienanh.php" class="text-decoration-none text-white">Thư viện hình ảnh</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/slide.php" class="text-decoration-none text-white">Trình chiếu</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/slide.php" class="text-decoration-none text-white">Trình chiếu</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class="btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/admin/phanquyen.php" class="text-decoration-none text-white">Phân quyền</a>
+                <a href="http://localhost:81/php/phenikaa-u/admin/phanquyen.php" class="text-decoration-none text-white">Phân quyền</a>
               </button>
             </li>
             <li class="list-group-item">
               <button type="button" class=" btn-secondary" style="width:200px;height: 40px;border: none;border-radius: 5px;">
-                <a href="http://localhost:8080/btl/phenikaa/index.php" class="text-decoration-none text-white">Đăng xuất</a>
+                <a href="http://localhost:81/php/phenikaa-u/index.php" class="text-decoration-none text-white">Đăng xuất</a>
               </button>
             </li>
           </ul>
